@@ -1,0 +1,375 @@
+/* ==================================
+ * X3DOM WebApp
+ * ==================================
+ * 
+ * Entwickler: Steven Birr (steven.birr@ovgu.de)
+ * 
+ * Datei: style.css
+ * 
+ * CSS Style-Angaben
+ */
+ 
+body
+{
+    margin: 0;
+    padding: 0;
+    font: 12px verdana,arial,sans-serif;
+    color: #3B3D3F;
+}
+#content{position: relative; top: -40px}
+
+ul{list-style-type: square}
+li{margin-bottom: 5px}
+.logo{width: 30px; height: 30px}
+strong{font-weight:bold}
+hr{border: 1px dashed #888; display:block;  margin: 20px 0;}
+.textindent{padding: 0 150px 0px 20px}
+
+#headline{
+   width: 535px;
+   margin-left: 245px;
+   position: relative;
+   top: -15px;
+   margin-bottom: 50px;
+}
+
+#mailHeader{
+   float:right;
+   position: relative;
+   margin-right: 20px;
+   top: 25px;
+}   
+
+#headlineLink
+{
+   width: 400px;
+   background-color: #FFFFFF;
+   font-size: 23px;
+   position: relative;
+   top: -30px;
+   text-align: center;
+   padding: 20px;
+   border: 2px solid #D3D3D3;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   text-shadow: 0 1px 4px #919191;
+   margin-right: 30px;
+}
+
+#IEoptions, #notIE, #webglAlert,#myCanvas,#noCaseAlert{display: none;}
+#jsError{
+   color:red; font-size:14px; margin-left:20px;
+}
+#jsError span{color: #3B3D3F;}
+
+#webglAlert{
+    margin: 15px 15px;
+}
+.error{color: #D83C3C}
+
+#plus{font-size: 15px; float: left; padding-left:5px}
+
+a:link {color: #0047A3;}
+a:visited{color: #0047A3;}
+a:active{text-decoration: none;}
+a:hover{text-decoration: none; color: #0047A3;}
+a:focus {outline: none;}
+
+a#headlineLink:link {text-decoration: none; color: #3B3D3F;}
+a#headlineLink:visited{text-decoration: none; color: #3B3D3F;}
+a#headlineLink:active{text-decoration: none;}
+a#headlineLink:hover{text-decoration: none; color: #0047A3;}
+a#headlineLink:focus {outline: none;}
+
+#main, #helper{border: 0px solid black;}
+#main{width: 100%; height: 600px;}
+#helper{width:100px; height:100px}
+
+#intro{
+    width: 860px;
+    padding: 30px;
+    font-size: 14px;
+    margin: 10px auto 0;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+    -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+    box-shadow: 0 0 3px #888;-moz-box-shadow: 0 0 3px #888; -webkit-box-shadow: 0 0 3px #888;
+}
+
+#mainPanel
+{
+   border-top: 1px solid #EDEDED;
+   line-height: 1.7em;
+   background: rgb(254,255,255); /* Old browsers */
+   background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(215,231,237,1) 53%, rgba(160,216,239,1) 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(22%,rgba(255,255,255,1)), color-stop(53%,rgba(215,231,237,1)), color-stop(100%,rgba(160,216,239,1))); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(255,255,255,1) 22%,rgba(215,231,237,1) 53%,rgba(160,216,239,1) 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(255,255,255,1) 22%,rgba(215,231,237,1) 53%,rgba(160,216,239,1) 100%); /* Opera11.10+ */
+   background: -ms-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(255,255,255,1) 22%,rgba(215,231,237,1) 53%,rgba(160,216,239,1) 100%); /* IE10+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+   background: linear-gradient(top, rgba(254,255,255,1) 0%,rgba(255,255,255,1) 22%,rgba(215,231,237,1) 53%,rgba(160,216,239,1) 100%); /* W3C */
+   width: 880px;
+
+   margin: 30px auto 30px;
+   background-color: #E2EAF3;
+   -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+   box-shadow: 2px 5px 5px #888;-moz-box-shadow: 2px 5px 5px #888; -webkit-box-shadow: 2px 5px 5px #888;
+   padding: 30px 20px;
+}
+
+#mainPanel li.current {list-style-image: url("../images/apply-icon-20-green.png"); margin-left:5px}
+#mainPanel li.future{list-style-image: url("../images/apply-icon-20-orange.png"); margin-left:5px}
+
+/* Allgemeine CSS3-Button-Klasse */
+.button {
+   color:#0047A3;
+   -moz-border-radius:9px;
+   -webkit-border-radius:9px;
+   border-radius:9px;
+   display:inline-block;
+   font-family:arial;
+   font-size:15px;
+   font-weight:bold;
+   padding: 20px 30px;
+   text-decoration:none;
+   text-align: center;
+}.button:active {
+   position:relative;
+   top:1px;
+   left: 1px;
+}.button:link{color:#0047A3}
+.button:visited{color:#0047A3}
+
+
+label
+{
+   padding-left: 5px;
+   cursor:pointer;
+}
+
+input{
+   margin-bottom: 5px;
+}
+
+.interactHelpIcon{float:left; position: relative; top: -5px;}
+.interactionHelpText{padding-left: 5px;line-height: 18px;}
+.keyIcon{width: 33px}
+
+.box{
+   width: 200px;
+   background-color: #FFFFFF;
+   display:block;
+   float:left;
+   padding: 5px 10px;
+   border: 1px solid #9595A5;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   box-shadow: 0px 1px 5px #888;
+   -moz-box-shadow: 0px 1px 5px #888;
+   -webkit-box-shadow: 0px 1px 5px #888;
+}
+
+.controlsHeader{
+   font-weight: bold; 
+   padding-bottom: 5px; 
+   margin-bottom: 10px; 
+   border-bottom: 1px solid #888;
+   line-height: 18px;
+}
+
+#controlsWrapper
+{
+   display: none;
+   float: left;
+   width: 230px;
+}
+
+#splashWrapper{display: none}
+#loadingText{line-height: 1.8em; padding: 10px 0}
+#splash{
+   width:250px;
+   text-align: center;
+   font-weight: bold;
+   line-height: 1.7em;
+}
+
+#mainScene{
+   cursor: pointer;
+   margin-left: 10px;
+   margin-right: 10px;
+   border: 1px solid #79b7e7;
+   width: 600px;
+   height: 600px;
+   position: relative;
+   float:left;
+   background-color: #FFFFFF;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+#helperScene
+{
+    cursor:pointer;
+    display:none;
+    position: relative;
+    right: -490px;
+    top: -210px;
+}
+
+
+/* 3D Widget */ 
+#widget3D{
+   clear:left;
+   position:relative;
+   display: none;
+   margin-left: 5px;
+   width: 125px; /* Damit das Widget den 3D-Helper nicht überdeckt */
+   height: 82px;
+   top:-85px;
+}
+
+#panControls{width: 85px;}
+
+.widgetControl {
+   background: url("../images/widget.png") no-repeat scroll 1000px 1000px;
+   background-position: -80px 0px;
+   position: relative !important;
+}
+
+#zoomControls{
+   width: 28px;
+   height: 72px;
+   background-position: -166px 0px;
+}
+
+.zoomControls{left: 90px;top: -122px;}
+.zoomControlsClicked{top: -121px;}
+
+.pointer{cursor:pointer}
+.horizontalPan{width: 18px; height:30px;}
+.verticalPan{width: 34px; height:20px;}
+.widgetClickedLeft{right:1px;}
+.widgetClickedRight{left:1px}
+.widgetClickedUp{top:-1px;}
+.widgetClickedDown{top:1px;}
+.widgetClickedHome{left:1px;top:1px;}
+
+.zoom-in{width: 18px; height: 23px; background-position: -195px -18px; left: 6px;top: 19px;}
+.zoom-out{width: 18px; height: 23px; background-position: -195px -43px; left: 6px;top: 20px;border: 0px solid black;}
+.zoom-in-highlight{background-position: -214px -18px;}
+.zoom-out-highlight{background-position: -214px -43px;}
+
+.rotate-left{background-position: 0 0;left: 8.5px;top: 24px;}
+.rotate-right { background-position: -59px 0;left: 58.5px;top: -6px;}
+.rotate-up {background-position: -30px -30px;left: 24px;top: -58px;}
+.rotate-down {background-position: 3px -50px;left: 24px;top: -29px;}
+.rotate-home {width: 22px; height: 23px;background-position: -4px -79px;left: 33px;top: -71px;}
+
+.rotate-left-highlight{background-position: -19px 0;}
+.rotate-right-highlight{background-position: -41px 0;}
+.rotate-up-highlight{background-position: -30px -51px;}
+.rotate-down-highlight{background-position: 3px -29px;}
+.rotate-home-highlight{background-position: -29px -79px;}
+
+#structuresContentWrapper{border: 1px solid #839BAF; border-bottom: 0; border-left: 0; border-right: 0; min-height: 200px; background-color: #F9FBFC;}
+
+ #tooltip3D{
+     padding:7px;
+     border-width: 3px;
+     border-style: solid;
+     background-color: #FFFFFF;
+     position: absolute;
+     font-weight: bold;
+     z-index: 2;
+ }
+ 
+ #startButton
+{
+   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+   box-shadow:inset 0px 1px 0px 0px #ffffff;
+   border:1px solid #9E9E9E;
+   text-shadow:1px 1px 0px #ffffff;
+   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+   background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+   background-color:#ededed;
+   
+}#startButton:hover{
+   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+   background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+   background-color:#dfdfdf;
+}
+
+#startButtonWrapper{
+   width: 100px;
+   margin: 20px auto;
+}
+
+#startButtonText{
+   padding-top: 5px;
+   text-align: center; 
+   font-size: 14px;
+   font-weight: bold; 
+   line-height: 1.7em;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+/* ================= HTML 5 Progressbar ==================== */
+#progressBar
+{
+    color:#0063a6;
+    font-size:.6em;
+    line-height:1.5em;
+    text-indent:.5em;
+    width:15em;
+    height:1.8em;
+    border:1px solid #0063a6;
+    background:#fff;
+    margin-right: 5px;
+}
+#progressBar::-webkit-progress-bar { background:#fff; }		
+#progressBar::-webkit-progress-value, #progressBar::-moz-progress-bar { background:#0063a6;}
+
+/* ================= 2D CSS Tooltip ==================== */
+.tooltip2D span {
+    background-color: #FFFFFF;
+    margin-left: -999em;
+    position: absolute;
+    color: #234E78;
+    padding: 3px 6px;
+    border: 1px solid #0063a6;
+    width: 50px;
+}
+.tooltip2D:hover span{
+    position: absolute; left: 25px; top: 25px; margin-left: 0;z-index: 100;
+}
